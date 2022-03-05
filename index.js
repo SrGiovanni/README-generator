@@ -13,7 +13,14 @@ const questions = ['Please enter the title of your project: (required)',
                     'Please enter testing instructions'];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(`./dist/${fileName}`, data, (err) =>{
+        if(err){
+            console.log(err);
+            return;
+        }
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {}
