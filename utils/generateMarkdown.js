@@ -1,22 +1,21 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case 'MIT':
-      return  `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-                (https://opensource.org/licenses/MIT)`;
+      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
       break;
     case 'GNU GLPv3':
-      return ` [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
-                (https://www.gnu.org/licenses/gpl-3.0)`;
+      return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
       break;
     default:
       return ``;
       break;
+      
   }
 }
 
-// TODO: Create a function that returns the license link
+// A function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
@@ -31,16 +30,19 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// A function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   switch (license) {
     case 'MIT':
-      return  `Copyrite (c) ${new Date.getFulYear()} \
-              Licensed under the ${renderLicenseLink(license)}`;
+      return  `
+      Copyright &copy ${new Date().getFullYear()}.  
+      Licensed under the ${renderLicenseLink(license)} license.`;
       break;
     case 'GNU GLPv3':
-      return ` GNU license placeholder`;
+      return `
+      Copyright &copy ${new Date().getFullYear()}. 
+      Licensed under ${renderLicenseLink(license)} license.`;
       break;
     default:
       return ``;
@@ -49,10 +51,11 @@ function renderLicenseSection(license) {
 
 }
 
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README
 function generateMarkdown(data) {
   const {title, description, installation, usage, license, contribution, testing, github, email} = data;
   return `# ${title}
+
   ${renderLicenseBadge(license)}
 
   ## Description
@@ -75,14 +78,15 @@ function generateMarkdown(data) {
   ## License
   ${renderLicenseSection(license)}
 
-  ## Contributing
+  ## Contributing to the Project
   ${contribution}
 
   ## Tests
   ${testing}
 
   ## Questions
-  If you have any questions,<a href="https://github.com/${github}">GitHub</a>
+  If you have any questions, my <a href="https://github.com/${github}">GitHub profile</a> is linked,
+  or you can email me at <a href = "mailto: ${email}">${email}</a>.
 `;
 }
 
