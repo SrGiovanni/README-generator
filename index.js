@@ -141,4 +141,11 @@ function init() {
 }
 
 // Function call to initialize app
-init();
+init()
+.then(answers => {
+  generateMarkdown(answers);
+}).then(markdown => {
+  writeToFile('README.md',markdown)
+}).catch( err => {
+  console.log(err);
+});
