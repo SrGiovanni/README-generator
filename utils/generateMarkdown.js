@@ -35,14 +35,10 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   switch (license) {
     case 'MIT':
-      return  `
-      Copyright &copy ${new Date().getFullYear()}.  
-      Licensed under the ${renderLicenseLink(license)} license.`;
+      return  `Copyright &copy ${new Date().getFullYear()}.<br />Licensed under the ${renderLicenseLink(license)} license.`;
       break;
     case 'GNU GLPv3':
-      return `
-      Copyright &copy ${new Date().getFullYear()}. 
-      Licensed under ${renderLicenseLink(license)} license.`;
+      return `Copyright &copy ${new Date().getFullYear()}.<br />Licensed under ${renderLicenseLink(license)} license.`;
       break;
     default:
       return ``;

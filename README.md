@@ -25,6 +25,8 @@ Automate the process of writing a professional readme for your project. </ br> T
 
 After downloading app and installing dependencies, run `node index.js` in your terminal.
 
+![Walkthrough Video](./assets/videos/README%20Generator%20Walkthrough%20video.mp4)
+
 ## License
 
 Copyright &copy 2022.  

@@ -137,7 +137,8 @@ init()
   return generateMarkdown(answers);
 }).then(markdown => {
   writeToFile('README.md', markdown);
-  console.log('File written successfully! you can find it at ./distr/README.md')
+  console.log(`File written successfully!
+   you can find it at ./dist/README.md`)
 }).catch( err => {
   console.log(err);
 });
