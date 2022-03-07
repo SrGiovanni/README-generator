@@ -65,6 +65,8 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
 
+  ---
+
   ## Installation
   ${installation}
 
@@ -73,6 +75,8 @@ function generateMarkdown(data) {
 
   ## License
   ${renderLicenseSection(license)}
+
+  ---
 
   ## Contributing to the Project
   ${contribution}

@@ -15,6 +15,8 @@ Automate the process of writing a professional readme for your project. </ br> T
 - [Tests](#tests)
 - [Questions](#questions)
 
+---
+
 ## Installation
 
 - Download the repositiry from GitHub
@@ -25,14 +27,14 @@ Automate the process of writing a professional readme for your project. </ br> T
 
 After downloading app and installing dependencies, run `node index.js` in your terminal.
 
-<video width="320" height="240" controls>
-  <source src="./assets/videos/README%20Generator%20Walkthrough%20video.mp4" type="video/mp4">
-</video>
+![Walkthrough Video](./assets/videos/README%20Generator%20Walkthrough%20video.mp4)
 
 ## License
 
 Copyright &copy 2022.  
 Licensed under the [MIT](https://mit-license.org/) license.
+
+---
 
 ## Contributing
 
