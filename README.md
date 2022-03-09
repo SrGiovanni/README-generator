@@ -31,7 +31,7 @@ After downloading app and installing dependencies, run `node index.js` in your t
 
 ## License
 
-Copyright &copy 2022.  
+Copyright (c) 2022.  
 Licensed under the [MIT](https://mit-license.org/) license.
 
 ---
